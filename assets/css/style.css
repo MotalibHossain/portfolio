@@ -1349,10 +1349,11 @@ section {
   text-align:center;
   width:100px;
   background-color: #04438D;
-  clip-path: polygon(100% 0, 83% 49%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  /* clip-path: polygon(100% 0, 83% 49%, 100% 100%, 0 100%, 0% 50%, 0 0); */
+  clip-path: polygon(100% 0, 95% 49%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 .socail-icon a:hover span {
-  right: 80%;
+  right: 93%;
 }
 .socail-icon a:hover .linkdin {
   background-color: #0A66C2;
