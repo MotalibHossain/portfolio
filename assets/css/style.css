@@ -701,9 +701,9 @@ section {
 .service-logo img {
   transition: transform 1s;
 }
-.main:hover .service-logo img {
+/* .main:hover .service-logo img {
   transform: rotate(360deg);
-}
+} */
 /*==============================================
                   Start Hire me
 ===============================================*/
