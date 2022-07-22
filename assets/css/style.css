@@ -472,6 +472,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about__body{
+  padding: 30px 0px 30px 0px;
+}
 .about .content h3 {
   font-weight: 500;
   font-size: 34px;
@@ -484,6 +487,7 @@ section {
 .about .content p {
   color: black;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .about .content .count-box {
@@ -551,6 +555,11 @@ section {
 @media (max-width: 667px) {
   .about .image img {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .about .about__body .image img {
+    display: none;
   }
 }
 /*--------------------------------------------------------------
