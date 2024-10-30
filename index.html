@@ -9,6 +9,7 @@
 	<title>Motalib Hossain</title>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
+	
 	<!-- ----------Icon list---------- -->
 	<!-- Favicons -->
 	<link href="assets/img/motalib_profile.png" rel="icon" />
@@ -40,6 +41,8 @@
 	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
 	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.jquery.com; connect-src 'self' https://api.github.com;">
+
 </head>
 
 <body>
@@ -121,62 +124,38 @@
 					</div>
 					<div class="col-xl-8 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
 						<div class="content d-flex flex-column justify-content-center">
-							<h5>Welcome to my portfolio</h5>
+							<!-- <h5>Welcome to my portfolio</h5> -->
 							<h3>Let's be familiar, I am Motalib Hossain</h3>
 							<h6 class="text-info">A Proffessional FullStack Web Developer</h6>
 							<p class="my-2">
 								<!-- Hi This is motalib hossain. Currently, I am a student at Daffodil International University under the department of CSE. I'm a web designer and Developer. Since 2020, I am working as a web designer and Completed some project for local client. I am expert on modern responsive website Design, WordPress website design. -->
 								Hi 👋,<br>
-								This is motalib hossain. I passed my graduation from Daffodil International University
-								under the department of CSE. I am a <b>Full-stack developer</b> with professional
-								expertise in the field of web development
-								with python and javascript. I have a strong passion for web technologies.
-								<br>
-								I love to teach people about web technology and ICT.
+								I am a full-stack developer with a passion and expertise in front-end development,
+								including HTML5, CSS3, JavaScript, jQuery, and React. I also have a solid understanding
+								of backend technologies such as Python and Django. I am passionate about web technology
+								and enjoy teaching others about web development and ICT.
 							</p>
 							<div class="row">
 
 								<div class="col-md-6 d-md-flex align-items-md-stretch">
 									<div class="count-box">
 										<i class="bi bi-x-diamond-fill text-warning"></i>
-										<span data-purecounter-start="0" data-purecounter-end="6"
-											data-purecounter-duration="1" class="purecounter"></span>
-										<p><strong>Projects</strong> I have already done more than 20 projects
+										<span class="Project"></span>
+										<p><strong>Projects</strong> I have already done more than <b
+												class="Project"></b> projects
 											successfully.</p>
 									</div>
 								</div>
 
-								<!-- <div class="col-md-6 d-md-flex align-items-md-stretch">
-									<div class="count-box text-info">
-										<i class="bi bi-emoji-smile text-info"></i>
-										<span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
-										class="purecounter"></span>
-										<p><strong>Happy Clients: </strong>
-											All the clients are happy to me for my dedicated working.
-										</p>
-									</div>
-								</div> -->
-
-
 								<div class="col-md-6 d-md-flex align-items-md-stretch">
 									<div class="count-box">
 										<i class="bi bi-clock text-success"></i>
-										<span data-purecounter-start="0" data-purecounter-end="1"
-											data-purecounter-duration="1" class="purecounter"></span>
+										<span id="experience"></span>
 										<p><strong>Years of experience</strong>
 											I am engaged in this industry for 1 years.</p>
 									</div>
 								</div>
 
-								<!-- <div class="col-md-6 d-md-flex align-items-md-stretch">
-									<div class="count-box">
-										<i class="bi bi-award text-danger"></i>
-										<span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-										class="purecounter"></span>
-										<p><strong>Training</strong> I have completed more than 5 training about website and website related
-										technologies.</p>
-									</div>
-								</div> -->
 							</div>
 						</div><!-- End .content-->
 					</div>
@@ -1022,28 +1001,35 @@
 	<!-- ======================================================================= -->
 	<div class="socail-icon">
 		<ul>
-			<li class="animate__animated animate__fadeInDown">
+			<!-- <li class="animate__animated animate__fadeInDown">
 				<a class="socail-icon1" href="https://www.facebook.com/S.MotalibHossain/" target="_blank">
 					<i class='fab'>&#xf39e;</i>
 					<span class="fasbook">Facebook</span>
 				</a>
-			</li>
-			<li class="animate__animated animate__fadeInDown animate__delay-1s">
+			</li> -->
+			<li class="animate__animated animate__fadeInDown">
 				<a class="socail-icon2" href="https://www.linkedin.com/in/motalibhossain/" target="_blank">
 					<i class='fab'>&#xf0e1;</i>
 					<span class="linkdin">linkdin</span>
 				</a>
 			</li>
-			<li class="animate__animated animate__fadeInDown animate__delay-2s">
+			<li class="animate__animated animate__fadeInDown animate__delay-1s">
 				<a class="socail-icon3" href="https://github.com/MotalibHossain" target="_blank">
 					<i class='fab'>&#xf09b;</i>
 					<span class="github">GitHub</span>
 				</a>
 			</li>
-			<li class="animate__animated animate__fadeInDown animate__delay-3s">
+			<li class="animate__animated animate__fadeInDown animate__delay-2s">
 				<a class="socail-icon4" href="https://stackoverflow.com/users/13298803/motalib-hossain" target="_blank">
 					<i class="fab fa-stack-overflow"></i>
 					<span style="font-size: 13px;" class="twiter">Stackoverflow</span>
+				</a>
+			</li>
+			<li class="animate__animated animate__fadeInDown animate__delay-3s">
+				<a class="socail-icon4 download" href="#">
+					<!-- <i class="fab fa-stack-overflow"></i> -->
+					<i class="fa fa-download"></i>
+					<span style="font-size: 13px;" class="twiter">Download CV</span>
 				</a>
 			</li>
 		</ul>
@@ -1085,9 +1071,30 @@
 	<script src="assets/js/script2.js"></script>
 	<script>
 		$(document).on('click', '.download', function () {
-			console.log("#download")
+			event.preventDefault();
 			window.location.replace('https://storage.rxresu.me/cm2uot72a13j8zg0515a3o4xo/resumes/CV.Motalib Hossain.pdf')
 		})
+
+		$(document).ready(function () {
+			const years = new Date().getFullYear() - new Date("2022-01-01").getFullYear() -
+				(new Date() < new Date(new Date().getFullYear(), 0, 1) ? 1 : 0);
+			$('#experience').text(years);
+		});
+
+		$(document).ready(function () {
+			const username = "MotalibHossain";
+			const apiUrl = `https://api.github.com/users/${username}`;
+
+			fetch(apiUrl)
+				.then(response => response.json())
+				.then(data => {
+					$('.Project').text(data.public_repos);
+				})
+				.catch(error => {
+					$('.Project').text("35");
+				});
+		});
+
 	</script>
 </body>
 

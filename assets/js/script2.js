@@ -1,23 +1,23 @@
 
 function topFunction() {
- 
-            $('html, body').animate({scrollTop:0}, 'slow');
-        }
-        // ===============progress-bar==================
-        jQuery('.skillbar').each(function(){
-        jQuery(this).find('.skillbar-bar').animate({
-        width:jQuery(this).attr('data-percent')
-            },2000);
-        });
 
-        // ===============progress-bar==================
-        // (function($){
-        //     new WOW().init();
-        // })(jQuery);
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
+}
+// ===============progress-bar==================
+jQuery('.skillbar').each(function () {
+  jQuery(this).find('.skillbar-bar').animate({
+    width: jQuery(this).attr('data-percent')
+  }, 2000);
+});
+
+// ===============progress-bar==================
+// (function($){
+//     new WOW().init();
+// })(jQuery);
 
 
-    // ========banner text animation================
-    var TxtRotate = function(el, toRotate, period) {
+// ========banner text animation================
+var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -27,7 +27,7 @@ function topFunction() {
   this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function() {
+TxtRotate.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -37,7 +37,7 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   var that = this;
   var delta = 300 - Math.random() * 100;
@@ -53,14 +53,14 @@ TxtRotate.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
   var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
+  for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
     var period = elements[i].getAttribute('data-period');
     if (toRotate) {
@@ -77,15 +77,15 @@ window.onload = function() {
                   back to top
 ========================================================================*/
 const toTop = document.querySelector(".backToTop");
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 150) {
-        toTop.classList.add("active");
-      } else {
-        toTop.classList.remove("active");
-      }
-    })
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 150) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 
-    const bacck=document.querySelector(".backToTop");
-    bacck.addEventListener("click",()=>{
-      window.scrollTo({top: 0, behavior:'smooth'});
-    })
+const bacck = document.querySelector(".backToTop");
+bacck.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+})
