@@ -149,9 +149,10 @@
 								<div class="col-md-6 d-md-flex align-items-md-stretch">
 									<div class="count-box">
 										<i class="bi bi-clock text-success"></i>
-										<span id="experience"></span>
-										<p><strong>Years of experience</strong>
-											I am engaged in this industry for 1 years.</p>
+										<span class="experience"></span>
+										<p >
+											<strong>Years of experience</strong>
+											I am engaged in this industry for <tag class="experience"></tag> years.</p>
 									</div>
 								</div>
 
@@ -1078,7 +1079,7 @@
 		$(document).ready(function () {
 			const years = new Date().getFullYear() - new Date("2022-01-01").getFullYear() -
 				(new Date() < new Date(new Date().getFullYear(), 0, 1) ? 1 : 0);
-			$('#experience').text(years?years:3);
+			$('.experience').text(years?years:3);
 		});
 
 		$(document).ready(function () {
