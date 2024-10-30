@@ -41,7 +41,6 @@
 	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
 	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://code.jquery.com; connect-src 'self' https://api.github.com;">
 
 </head>
 
@@ -889,7 +888,8 @@
 		<!-- START contact Section -->
 		<!-- ======================================================================= -->
 		<section id="contact" class="contact section-bg">
-			<div class="container" data-aos="fade-up" data-aos-anchor-placement="top" data-aos-duration="1000">
+			<!-- <div class="container" data-aos="fade-up" data-aos-anchor-placement="top" data-aos-duration="1000"> -->
+			<div class="container">
 				<div class="section-title">
 					<h2>Contact</h2>
 					<p>
@@ -1078,7 +1078,7 @@
 		$(document).ready(function () {
 			const years = new Date().getFullYear() - new Date("2022-01-01").getFullYear() -
 				(new Date() < new Date(new Date().getFullYear(), 0, 1) ? 1 : 0);
-			$('#experience').text(years);
+			$('#experience').text(years?years:3);
 		});
 
 		$(document).ready(function () {
