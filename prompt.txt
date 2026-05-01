@@ -1,0 +1,18 @@
+https://github.com/MotalibHossain/portfolio this is my old portfolio website. read the whole repo carefully. follow how many section here, which content i use here. Now your job is redesign my portfolio with those content and section using tailwind css, react and nextjs . you can use antdesign ui also.  And now design instraction is here below. i attached  image here for sidebar navigation design. and you also visite two website for design https://www.tusher16.com/home/, https://personal-portfolio-html-sbthemes.vercel.app/,
+
+
+
+Review and Adjust
+folow attached image overlap main body 
+1. sitebar navigation is not perfect. sitebar navigation ovelap mai body and body content hidden.
+    - sitebar navigation top my image will round and picture left bottom side will be green staus which means i am online
+    then navigation item.  image collect from my old website or github repo
+    
+2. first section round image show. available now place a green dot staus which hover then show this current text
+    - Scroll to explor not work. and not in write position.
+3.About me section all content collect from my https://github.com/MotalibHossain/portfolio.git repository.
+4. In skill section Proficiency Level no need this design in here keep Familiarity: Bootstrap-5, Tailwind CSS, JavaScript, jQuery, React, Python, Django, Supabase.
+ 
+ All section mismatch content. i need accurate content which collect from my portfolio repository which link i share and i attached my cv pdf collect from here.
+ No deed to change the main design just adjust those things. portfolio cards are ok. My Resume section design chagne showcase different way.  not follow same as my cv.
+collect content from my cv
