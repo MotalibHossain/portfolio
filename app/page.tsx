@@ -16,9 +16,12 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <main className="min-h-screen bg-dark-900">
-      <Header />
+      {/* Header only shown on mobile */}
+      <div className="md:hidden">
+        <Header />
+      </div>
       <Navigation />
-      <div className="pt-20 md:ml-64">
+      <div className="pt-16 md:pt-0 md:ml-64">
         <section id="home">
           <Hero />
         </section>

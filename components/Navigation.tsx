@@ -79,21 +79,23 @@ export default function Navigation() {
       )}
 
       {/* Desktop Sidebar Navigation */}
-      <nav className="hidden md:fixed md:left-0 md:top-0 md:flex md:flex-col md:w-64 md:h-screen md:bg-dark-800/50 md:backdrop-blur-md md:border-r md:border-gray-700 md:pt-10 md:px-6 md:space-y-2 md:z-20">
+      <nav className="hidden md:flex md:fixed md:left-0 md:top-0 md:flex-col md:w-64 md:h-screen md:bg-dark-900 md:border-r md:border-gray-800 md:z-30 md:overflow-y-auto">
         <SidebarProfile />
-        {navLinks.map(link => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={`block py-3 px-4 rounded-lg transition-all ${
-              activeSection === link.href.slice(1)
-                ? 'bg-gradient-to-r from-accent-purple to-accent-blue text-white shadow-lg'
-                : 'text-gray-400 hover:text-accent-purple hover:bg-dark-700/50'
-            }`}
-          >
-            {link.name}
-          </Link>
-        ))}
+        <div className="px-4 pb-8 space-y-1">
+          {navLinks.map(link => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`flex items-center gap-3 py-2.5 px-4 rounded-lg transition-all text-sm font-medium ${
+                activeSection === link.href.slice(1)
+                  ? 'bg-gradient-to-r from-accent-purple to-accent-blue text-white shadow-lg'
+                  : 'text-gray-400 hover:text-white hover:bg-dark-800'
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
       </nav>
 
       {/* Main content offset removed; handled in main layout */}
