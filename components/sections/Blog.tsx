@@ -43,14 +43,14 @@ const blogPosts = [
     category: 'Advanced',
     readTime: '9 min read',
   },
-  {
-    id: 6,
-    title: 'TypeScript Essentials for React Developers',
-    excerpt: 'Master TypeScript to write type-safe React applications with better development experience.',
-    date: 'Feb 15, 2024',
-    category: 'Tutorial',
-    readTime: '8 min read',
-  },
+  // {
+  //   id: 6,
+  //   title: 'TypeScript Essentials for React Developers',
+  //   excerpt: 'Master TypeScript to write type-safe React applications with better development experience.',
+  //   date: 'Feb 15, 2024',
+  //   category: 'Tutorial',
+  //   readTime: '8 min read',
+  // },
 ];
 
 export default function Blog() {
